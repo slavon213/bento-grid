@@ -175,17 +175,41 @@ h2 {
     .schedule {
         background-color: var(--color-purple-100);
         gap: var(--spacing-300);
-        padding: var(--spacing-400);
+        padding: var(--spacing-400) 17.5px;
         text-align: center;
 
         h2 {
             line-height: 24px;
             letter-spacing: -1.56px;
+            margin-inline: calc(var(--spacing-400) - 17.5px);
+        }
+
+        img {
+            /* margin-inline: 17.5px; */
+
         }
 
         p {
             font-size: 18px;
             line-height: 20px;
+            /* margin-inline: var(--spacing-400); */
+            margin-inline: calc(var(--spacing-400) - 17.5px);
         }
+    }
+
+    .grow {
+        background-color: var(--color-purple-500);
+        padding: var(--spacing-300) 59px;
+        gap: var(--spacing-500);
+        text-align: center;
+        justify-items: center;
+
+        h2 {
+            font-size: 32px;
+            line-height: 28px;
+            color: var(--color-white);
+            letter-spacing: -1.92px;
+        }
+
     }
 }
