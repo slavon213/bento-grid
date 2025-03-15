@@ -1,31 +1,18 @@
 @font-face {
     font-family: "DM Sans";
-    src: url(../assets/fonts/DMSans-VariableFont_opsz\wght.ttf)
+    src: url(../assets/fonts/DMSans-VariableFont_opsz_wght.ttf)
         format("truetype");
-    font-style: "normal";
-    font-weight: 400;
+    font-style: normal;
+    font-weight: 400 500;
 }
+
 
 @font-face {
     font-family: "DM Sans";
-    src: url(../assets/fonts/DMSans-VariableFont_opsz\wght.ttf)
+    src: url(../assets/fonts/DMSans-Italic-VariableFont_opsz_wght.ttf)
         format("truetype");
-    font-style: "normal";
-    font-weight: 500;
-}
-@font-face {
-    font-family: "DM Sans";
-    src: url(../assets/fonts/DMSans-Italic-VariableFont_opsz\wght.ttf)
-        format("truetype");
-    font-style: "italic";
-    font-weight: 400;
-}
-@font-face {
-    font-family: "DM Sans";
-    src: url(../assets/fonts/DMSans-Italic-VariableFont_opsz\wght.ttf)
-        format("truetype");
-    font-style: "italic";
-    font-weight: 500;
+    font-style: italic;
+    font-weight: 400 500;
 }
 
 :root {
@@ -37,7 +24,7 @@
     --color-white: #fff;
     --color-black: #121212;
     --color-background: #f6f5f6;
-    
+
     /* Spacing */
     --spacing-100: 8px;
     --spacing-200: 16px;
@@ -54,6 +41,7 @@ body {
 body {
     font-family: "DM Sans", sans-serif;
     font-size: 18px;
+    font-style: normal;
     line-height: 20px;
     color: var(--color-black);
     background-color: var(--color-background);
@@ -89,6 +77,11 @@ img {
     display: grid;
 }
 
+h2 {
+    font-weight: 500;
+    font-stretch: normal;
+}
+
 @media (min-width: 375px) {
     /* body {
         font-size: 20px;
@@ -98,8 +91,9 @@ img {
         border-radius: 10px;
         display: grid;
         justify-items: center;
-        text-align: center;
+        /* text-align: center; */
     }
+
     .container {
         max-width: 375px;
         grid-template-columns: 1fr;
@@ -117,6 +111,7 @@ img {
             font-weight: 500;
             line-height: 42px;
             letter-spacing: -1.84px;
+            text-align: center;
             color: var(--color-white);
             margin-block-end: var(--spacing-300);
 
@@ -133,10 +128,21 @@ img {
         p {
             color: var(--color-white);
         }
-
     }
 
     .accounts {
         background: var(--color-white);
+        padding: var(--spacing-200);
+
+        img {
+            margin-block-end: var(--spacing-200);
+        }
+
+        h2 {
+            font-size: 26px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: -1.56px;
+        }
     }
 }
