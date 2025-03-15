@@ -80,6 +80,7 @@ img {
 h2 {
     font-weight: 500;
     font-stretch: normal;
+    color: var(--color-black);
 }
 
 @media (min-width: 375px) {
@@ -110,13 +111,17 @@ h2 {
             font-size: 46px;
             font-weight: 500;
             line-height: 42px;
-            letter-spacing: -1.84px;
+            letter-spacing: -0.84px;
             text-align: center;
             color: var(--color-white);
             margin-block-end: var(--spacing-300);
 
-            span {
+            span:first-of-type {
                 color: var(--color-yellow-500);
+            }
+
+            span:last-of-type {
+                font-style: italic;
             }
         }
 
@@ -144,5 +149,25 @@ h2 {
             line-height: 24px;
             letter-spacing: -1.56px;
         }
+    }
+
+    .maintain {
+        background-color: var(--color-yellow-500);
+        padding: var(--spacing-200) var(--spacing-200) 0;
+        justify-items: start;
+        height: 216px;
+        overflow-y: hidden;
+
+        h2 {
+            font-size: 26px;
+            line-height: 24px;
+            letter-spacing: -1.56px;
+            margin-block-end: var(--spacing-200);
+        }
+
+        img {
+            width: 208px;
+        }
+
     }
 }
