@@ -273,7 +273,7 @@ h2 {
 
 @media (min-width: 768px) {
     .container {
-        min-width: 768px;
+        max-width: 1440px;
         grid-template-columns: 1fr 1fr;
         /* grid-auto-rows: auto; */
         /* grid-template-rows: auto; */
@@ -307,10 +307,26 @@ h2 {
     .maintain {
         padding: var(--spacing-300) var(--spacing-300) 0;
         height: auto;
+
+        h2 {
+            font-size: 28px;
+            line-height: 26px;
+            letter-spacing: -1.68px;
+        }
     }
 
     .schedule {
         grid-column: 1 / 3;
+        padding: var(--spacing-400) 166px;
+
+        
+
+        h2 {
+            font-size: 28px;
+            line-height: 26px;
+            letter-spacing: -1.68px;
+        }
+
     }
 
     .grow {
