@@ -146,3 +146,24 @@ h2 {
         }
     }
 }
+
+
+@media (min-width: 1449px) {
+    .container {
+        max-width: 1440px;
+        max-height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+    }
+
+    .two-cards {
+        grid-column: 1;
+        
+    }
+
+    .many-cards {
+        grid-column: 2/5;
+    }
+}
