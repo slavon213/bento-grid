@@ -468,6 +468,37 @@ h2 {
         }
     }
 
+    .accounts {
+        overflow-x: hidden;
+        position: relative;
+        height: 100%;
+
+
+        h2 {
+            /* position: absolute; */
+            /* bottom: var(--spacing-300); */
+            /* left: var(--spacing-300); */
+            align-content: end;
+            font-size: 32px;
+            line-height: 28px;
+            letter-spacing: 0;
+            margin-inline-end: 0;
+
+
+        }
+
+        img {
+            position: absolute;
+            top: var(--spacing-300);
+            left: var(--spacing-300);
+            margin-block-end: 0;
+            /* transform: translate(var(--spacing-300)); */
+            /* width: auto; */
+            /* height: 66px; */
+            /* height: 67px; */
+        }
+    }
+
     .schedule {
         grid-column: 3/4;
         grid-row: 1/3;
