@@ -403,7 +403,7 @@ h2 {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
     body {
         padding-block-start: 83px;
         padding-block-end: 65px;
@@ -496,6 +496,24 @@ h2 {
             /* width: auto; */
             /* height: 66px; */
             /* height: 67px; */
+        }
+    }
+
+    .maintain {
+        position: relative;
+        h2 {
+            font-size: 32px;
+            line-height: 28px;
+            letter-spacing: -1px;
+            margin-block-end: 111px;
+        }
+        img {
+            position: absolute;
+            width: calc(100% - (2 * var(--spacing-300)));
+            left: var(--spacing-300);
+            bottom: -28%;
+
+            
         }
     }
 
