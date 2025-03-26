@@ -35,7 +35,7 @@
 
 html,
 body {
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 body {
@@ -68,6 +68,7 @@ body {
 }
 
 img {
+    display: block;
     max-width: 100%;
     height: auto;
 }
@@ -75,6 +76,9 @@ img {
 .container {
     border: 1px solid red;
     display: grid;
+    place-content: center;
+    grid-template-columns: 1fr;
+
 }
 
 h2 {
@@ -83,15 +87,13 @@ h2 {
 }
 
 @media (min-width: 375px) {
-    /* body {
-        font-size: 20px;
-    } */
+    
 
     article {
         border-radius: 10px;
         display: grid;
         justify-items: center;
-        /* text-align: center; */
+        text-align: center;
     }
 
     .container {
