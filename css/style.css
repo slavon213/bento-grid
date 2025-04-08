@@ -222,6 +222,25 @@ h2 {
     }
 
     .percent {
+        background: var(--color-white);
+        /* gap: var(--spacing-300); */
+        padding: var(--spacing-300);
+        justify-items: start;
+
+        h2 {
+            font-size: 46px;
+            line-height: 42px;
+            letter-spacing: -1.84px;
+            margin-block-end: 15px;
+        }
+        img {
+            order: 1;
+            width: 179px;
+        }
+
+        p {
+            margin-block-end: var(--spacing-300);
+        }
     }
 
     .quicker {
