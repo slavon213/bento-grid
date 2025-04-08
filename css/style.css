@@ -1,16 +1,13 @@
 @font-face {
     font-family: "DM Sans";
-    src: url(../assets/fonts/DMSans-VariableFont_opsz_wght.ttf)
-        format("truetype");
+    src: url(../assets/fonts/DMSans-VariableFont_opsz_wght.ttf) format("truetype");
     font-style: normal;
     font-weight: 400 500;
 }
 
-
 @font-face {
     font-family: "DM Sans";
-    src: url(../assets/fonts/DMSans-Italic-VariableFont_opsz_wght.ttf)
-        format("truetype");
+    src: url(../assets/fonts/DMSans-Italic-VariableFont_opsz_wght.ttf) format("truetype");
     font-style: italic;
     font-weight: 400 500;
 }
@@ -31,6 +28,13 @@
     --spacing-300: 24px;
     --spacing-400: 32px;
     --spacing-500: 40px;
+
+    /* font-sizes */
+
+    --text-preset-1: 62px;
+    --text-preset-2: 40px;
+    --text-preset-3: 32px;
+    --text-preset-4: 18px;
 }
 
 html,
@@ -78,7 +82,16 @@ img {
     display: grid;
     place-content: center;
     grid-template-columns: 1fr;
+    grid-template-areas: 
 
+    "social-media"
+    "accounts"
+    "maintain"
+    "schedule"
+    "grow"
+    "percent"
+    "quicker"
+    "write"
 }
 
 h2 {
@@ -86,27 +99,32 @@ h2 {
     font-stretch: normal;
 }
 
-@media (min-width: 375px) {
-    
 
+@media (min-width: 375px) {
     article {
         border-radius: 10px;
         display: grid;
         justify-items: center;
         text-align: center;
+
+        h2 {
+            font-size: 26px;
+            line-height: 24px;
+        }
     }
 
     .container {
         max-width: 375px;
         grid-template-columns: 1fr;
-        gap: 32px;
-        padding: 32px 16px 40px;
+        gap: var(--spacing-400);
+        padding: var(--spacing-400) var(--spacing-200) var(--spacing-500);
     }
 
     .social-media {
         background-color: var(--color-purple-500);
         padding-block: var(--spacing-500);
         padding-inline: var(--spacing-400);
+        grid-area: social-media;
 
         h2 {
             font-size: 46px;
@@ -135,6 +153,7 @@ h2 {
     .accounts {
         background: var(--color-white);
         padding: var(--spacing-200);
+        grid-area: accounts;
 
         img {
             margin-block-end: var(--spacing-200);
@@ -146,5 +165,30 @@ h2 {
             line-height: 24px;
             letter-spacing: -1.56px;
         }
+    }
+
+    .maintain {
+
+
+    }
+
+    .schedule {
+
+    }
+
+    .grow {
+
+    }
+
+    .percent {
+
+    }
+
+    .quicker {
+
+    }
+
+    .write {
+
     }
 }
