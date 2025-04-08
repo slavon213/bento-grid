@@ -103,7 +103,8 @@ h2 {
         border-radius: 10px;
         display: grid;
         justify-items: center;
-        text-wrap: balance;
+        /* text-wrap: balance; */
+        text-wrap: pretty;
         overflow: hidden;
 
         /* text-align: center; */
@@ -111,6 +112,7 @@ h2 {
         h2 {
             font-size: 26px;
             line-height: 24px;
+            letter-spacing: -1.56px;
         }
     }
 
@@ -183,6 +185,23 @@ h2 {
     }
 
     .schedule {
+        background: var(--color-purple-100);
+        text-align: center;
+        gap: var(--spacing-300);
+        padding-block: var(--spacing-400);
+        padding-inline: 17px;
+
+        h2 {
+            order: 0;
+        }
+        img {
+            order: 1;
+           
+        }
+
+        p {
+            order: 2;
+        }
     }
 
     .grow {
