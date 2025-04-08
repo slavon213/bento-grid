@@ -290,6 +290,8 @@ h2 {
 
     .container {
         min-width: 768px;
+        padding-block: 52px;
+        padding-inline: var(--spacing-500);
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         "social-media social-media"
@@ -303,13 +305,19 @@ h2 {
 
     .social-media {
         padding-block: 72px;
-        padding-inline: 125px;
+        /* padding-inline: 125px; */
+        padding-inline: 102px;
 
         h2 {
             font-size: 54px;
             line-height: 48px;
             letter-spacing: -2.16px;
         }
+    }
+
+    .accounts {
+        padding: var(--spacing-300);
+    
     }
 
 }
