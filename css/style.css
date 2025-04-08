@@ -265,5 +265,21 @@ h2 {
     }
 
     .write {
+        background: var(--color-yellow-500);
+        padding: var(--spacing-300);
+        gap: var(--spacing-300);
+        justify-items: start;
+
+        h2 {
+            font-size: 32px;
+            line-height: 28px;
+            letter-spacing: -1.92px;
+        }
+
+        img {
+            width: 220px;
+            order: 1;
+        }
+
     }
 }
