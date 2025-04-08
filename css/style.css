@@ -305,7 +305,6 @@ h2 {
 
     .social-media {
         padding-block: 72px;
-        /* padding-inline: 125px; */
         padding-inline: 102px;
 
         h2 {
@@ -317,6 +316,15 @@ h2 {
 
     .accounts {
         padding: var(--spacing-300);
+        padding-inline-end: 120px;
+
+        h2 {
+            margin-inline-end: 96px;
+        }
+
+        img {
+            min-width: 316px;
+        }
     
     }
 
