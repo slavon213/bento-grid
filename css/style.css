@@ -223,7 +223,6 @@ h2 {
 
     .percent {
         background: var(--color-white);
-        /* gap: var(--spacing-300); */
         padding: var(--spacing-300);
         justify-items: start;
 
@@ -244,6 +243,25 @@ h2 {
     }
 
     .quicker {
+        background: var(--color-yellow-100);
+        padding: var(--spacing-400);
+        gap: var(--spacing-300);
+        justify-items: start;
+
+        h2 {
+            font-size: 32px;
+            line-height: 28px;
+            letter-spacing: -1.92px;
+            em {
+                color: var(--color-purple-500);
+            }
+        }
+
+        img {
+            width: 191px;
+            order: 1;
+        }
+
     }
 
     .write {
