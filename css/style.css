@@ -383,7 +383,7 @@ h2 {
         max-width: 1440px;
         /* padding-block-start: 83px; */
         /* padding-block-end: 65px; */
-        padding-inline: 0;
+        padding-inline: 160px;
         /* padding-inline: auto; */
         grid-template-columns: repeat(4, 1fr);
         /* grid-template-columns: auto; */
@@ -442,7 +442,19 @@ h2 {
 
     .schedule {
         padding: var(--spacing-400);
+        /* padding: var(--spacing-400) 0 var(--spacing-400) var(--spacing-400); */
         text-align: start;
+        overflow: visible;
+        /* position: relative; */
+
+        img {
+            /* width: 357px; */
+            /* position: absolute; */
+            max-width: none;
+            width: 358px;
+            /* transform: translateX(-50%); */
+            margin-inline-end: -122px;
+        }
     }
 
     .percent {
