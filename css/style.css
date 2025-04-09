@@ -346,4 +346,19 @@ h2 {
             width: 357px;
         }
     }
+
+    .grow {
+        grid-auto-flow: column;
+        align-items: center;
+        text-align: start;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        h2 {
+            font-size: 36px;
+            line-height: 30px;
+            letter-spacing: -2.16px;
+        }
+        
+    }
 }
