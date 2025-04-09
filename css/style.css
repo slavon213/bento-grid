@@ -109,10 +109,28 @@ h2 {
         overflow: hidden;
 
         h2 {
-            font-size: 26px;
-            line-height: 24px;
-            letter-spacing: -1.56px;
+            font-weight: 500;
         }
+    }
+
+    .items-1 h2 {
+
+        
+        font-size: 46px;
+        line-height: 42px;
+        letter-spacing: -1.84px;
+    }
+
+    .items-2 h2 {
+        font-size: 26px;
+        line-height: 24px;
+        letter-spacing: -1.56px;
+    }
+
+    .items-3 h2 {
+        font-size: 46px;
+        line-height: 42px;
+        letter-spacing: -1.84px;
     }
 
     .social-media {
@@ -122,10 +140,6 @@ h2 {
         grid-area: social-media;
 
         h2 {
-            font-size: 46px;
-            font-weight: 500;
-            line-height: 42px;
-            letter-spacing: -1.84px;
             text-align: center;
             color: var(--color-white);
             margin-block-end: var(--spacing-300);
@@ -158,7 +172,6 @@ h2 {
         }
 
         h2 {
-            font-weight: 500;
             letter-spacing: -1.56px;
         }
     }
@@ -220,9 +233,9 @@ h2 {
         grid-area: percent;
 
         h2 {
-            font-size: 46px;
-            line-height: 42px;
-            letter-spacing: -1.84px;
+            /* font-size: 46px; */
+            /* line-height: 42px; */
+            /* letter-spacing: -1.84px; */
             margin-block-end: 15px;
         }
         img {
@@ -359,14 +372,12 @@ h2 {
             line-height: 30px;
             letter-spacing: -2.16px;
         }
-        
     }
 
     .percent {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
-        /* justify-items: space-between; */
 
         img {
             grid-column: 2/3;
@@ -378,7 +389,6 @@ h2 {
             font-size: 54px;
             line-height: 48px;
             letter-spacing: -2.16px;
-
         }
 
         p {
@@ -391,12 +401,12 @@ h2 {
 
         h2 {
             font-size: 36px;
-            line-height: 30px;letter-spacing: -2.16px;
+            line-height: 30px;
+            letter-spacing: -2.16px;
         }
     }
 
     .write {
-
         h2 {
             font-size: 36px;
             line-height: 30px;
