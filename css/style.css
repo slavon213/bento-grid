@@ -383,34 +383,64 @@ h2 {
 @media (min-width: 1200px) {
     .container {
         max-width: 1440px;
-        padding-block-start: 83px;
-        padding-block-end: 65px;
+        /* padding-block-start: 83px; */
+        /* padding-block-end: 65px; */
+        padding-inline: 0;
+        /* padding-inline: auto; */
         grid-template-columns: repeat(4, 1fr);
         /* grid-template-columns: auto; */
         grid-template-areas: 
-            "quicker social-media social-media schedule"
-            "quicker accounts maintain schedule"
-            "write  accounts maintain schedule"
-            "write percent grow grow"
+        "quicker social-media social-media schedule"
+        "quicker accounts maintain schedule"
+        "write  accounts maintain schedule"
+        "write percent grow grow"
         ;
     }
-
+    
     .items-1 h2 {
         font-size: var(--text-preset-1);
         line-height: 58px;
         letter-spacing: -3px;
     }
-
+    
     .items-2 h2 {
         font-size: var(--text-preset-3);
         line-height: 28px;
         letter-spacing: -2px;
-
+        
     }
-
+    
     .items-3 h2 {
         font-size: var(--text-preset-2);
         line-height: 36px;
         letter-spacing: -2px;
+    }
+    
+    .social-media {
+        padding: var(--spacing-400);
+    }
+    
+    .accounts {
+        padding: var(--spacing-300);
+    }
+    .maintain {
+        padding: var(--spacing-300);
+        
+        
+        img {
+            width: 100%;
+            margin-block-end: -92px;
+        }
+    }
+    
+    .write {
+        img {
+            width: 100%;
+        }
+        
+    }
+
+    .grow {
+        padding: var(--spacing-300);
     }
 }
