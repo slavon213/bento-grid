@@ -394,4 +394,14 @@ h2 {
             line-height: 30px;letter-spacing: -2.16px;
         }
     }
+
+    .write {
+
+        h2 {
+            font-size: 36px;
+            line-height: 30px;
+            letter-spacing: -2.16px;
+            text-wrap: balance;
+        }
+    }
 }
