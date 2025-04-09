@@ -41,7 +41,7 @@
 
 html,
 body {
-    min-height: 100vh;
+     min-height: 100vh;
 }
 
 body {
@@ -376,5 +376,41 @@ h2 {
         h2 {
             text-wrap: balance;
         }
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1440px;
+        padding-block-start: 83px;
+        padding-block-end: 65px;
+        grid-template-columns: repeat(4, 1fr);
+        /* grid-template-columns: auto; */
+        grid-template-areas: 
+            "quicker social-media social-media schedule"
+            "quicker accounts maintain schedule"
+            "write  accounts maintain schedule"
+            "write percent grow grow"
+        ;
+    }
+
+    .items-1 h2 {
+        font-size: var(--text-preset-1);
+        line-height: 58px;
+        letter-spacing: -3px;
+    }
+
+    .items-2 h2 {
+        font-size: var(--text-preset-3);
+        line-height: 28px;
+        letter-spacing: -2px;
+
+    }
+
+    .items-3 h2 {
+        font-size: var(--text-preset-2);
+        line-height: 36px;
+        letter-spacing: -2px;
     }
 }
