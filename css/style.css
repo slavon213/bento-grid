@@ -1,13 +1,15 @@
 @font-face {
     font-family: "DM Sans";
-    src: url(../assets/fonts/DMSans-VariableFont_opsz_wght.ttf) format("truetype");
+    src: url(../assets/fonts/DMSans-VariableFont_opsz_wght.ttf)
+        format("truetype");
     font-style: normal;
     font-weight: 400 500;
 }
 
 @font-face {
     font-family: "DM Sans";
-    src: url(../assets/fonts/DMSans-Italic-VariableFont_opsz_wght.ttf) format("truetype");
+    src: url(../assets/fonts/DMSans-Italic-VariableFont_opsz_wght.ttf)
+        format("truetype");
     font-style: italic;
     font-weight: 400 500;
 }
@@ -288,15 +290,27 @@ h2 {
             "quicker write";
     }
 
+    .items-1 h2 {
+        font-size: 54px;
+        line-height: 48px;
+        letter-spacing: -2.16px;
+    }
+
+    .items-2 h2 {
+        font-size: 28px;
+        line-height: 26px;
+        letter-spacing: -1.68px;
+    }
+
+    .items-3 h2 {
+        font-size: 36px;
+        line-height: 30px;
+        letter-spacing: -2.16px;
+    }
+
     .social-media {
         padding-block: 72px;
         padding-inline: 102px;
-
-        h2 {
-            font-size: 54px;
-            line-height: 48px;
-            letter-spacing: -2.16px;
-        }
     }
 
     .accounts {
@@ -305,9 +319,6 @@ h2 {
 
         h2 {
             margin-inline-end: 96px;
-            font-size: 28px;
-            line-height: 26px;
-            letter-spacing: -1.68px;
         }
 
         img {
@@ -319,11 +330,6 @@ h2 {
         padding: var(--spacing-300);
         padding-block-end: 0;
 
-        h2 {
-            font-size: 28px;
-            line-height: 26px;
-            letter-spacing: -1.68px;
-        }
         img {
             margin-block-end: 0;
         }
@@ -332,11 +338,6 @@ h2 {
     .schedule {
         padding-inline: 165px;
 
-        h2 {
-            font-size: 28px;
-            line-height: 26px;
-            letter-spacing: -1.68px;
-        }
 
         img {
             width: 357px;
@@ -349,12 +350,6 @@ h2 {
         text-align: start;
         display: grid;
         grid-template-columns: 1fr 1fr;
-
-        h2 {
-            font-size: 36px;
-            line-height: 30px;
-            letter-spacing: -2.16px;
-        }
     }
 
     .percent {
@@ -368,12 +363,6 @@ h2 {
             justify-self: end;
         }
 
-        h2 {
-            font-size: 54px;
-            line-height: 48px;
-            letter-spacing: -2.16px;
-        }
-
         p {
             margin-block-end: 0;
         }
@@ -381,19 +370,10 @@ h2 {
 
     .quicker {
         align-content: center;
-
-        h2 {
-            font-size: 36px;
-            line-height: 30px;
-            letter-spacing: -2.16px;
-        }
     }
 
     .write {
         h2 {
-            font-size: 36px;
-            line-height: 30px;
-            letter-spacing: -2.16px;
             text-wrap: balance;
         }
     }
