@@ -380,10 +380,12 @@ h2 {
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 1440px;
+        max-width: 1130px;
         /* padding-block-start: 83px; */
         /* padding-block-end: 65px; */
-        padding-inline: 160px;
+        /* padding-inline: 160px; */
+        padding: 0;
+        /* padding-block: 65px; */
         /* padding-inline: auto; */
         grid-template-columns: repeat(4, 1fr);
         /* grid-template-columns: auto; */
