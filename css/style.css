@@ -1,15 +1,13 @@
 @font-face {
     font-family: "DM Sans";
-    src: url(../assets/fonts/DMSans-VariableFont_opsz_wght.ttf)
-        format("truetype");
+    src: url(../assets/fonts/DMSans-VariableFont_opsz_wght.ttf) format("truetype");
     font-style: normal;
     font-weight: 400 500;
 }
 
 @font-face {
     font-family: "DM Sans";
-    src: url(../assets/fonts/DMSans-Italic-VariableFont_opsz_wght.ttf)
-        format("truetype");
+    src: url(../assets/fonts/DMSans-Italic-VariableFont_opsz_wght.ttf) format("truetype");
     font-style: italic;
     font-weight: 400 500;
 }
@@ -381,14 +379,8 @@ h2 {
 @media (min-width: 1200px) {
     .container {
         max-width: 1130px;
-        /* padding-block-start: 83px; */
-        /* padding-block-end: 65px; */
-        /* padding-inline: 160px; */
         padding: 0;
-        /* padding-block: 65px; */
-        /* padding-inline: auto; */
         grid-template-columns: repeat(4, 1fr);
-        /* grid-template-columns: auto; */
         grid-template-areas:
             "quicker social-media social-media schedule"
             "quicker accounts maintain schedule"
@@ -420,6 +412,13 @@ h2 {
 
     .accounts {
         padding: var(--spacing-300);
+
+        img {
+        }
+
+        h2 {
+            margin-inline-end: 110px;
+        }
     }
     .maintain {
         padding: var(--spacing-300);
@@ -444,17 +443,12 @@ h2 {
 
     .schedule {
         padding: var(--spacing-400);
-        /* padding: var(--spacing-400) 0 var(--spacing-400) var(--spacing-400); */
         text-align: start;
         overflow: visible;
-        /* position: relative; */
 
         img {
-            /* width: 357px; */
-            /* position: absolute; */
             max-width: none;
             width: 358px;
-            /* transform: translateX(-50%); */
             margin-inline-end: -122px;
         }
     }
